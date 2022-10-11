@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Khss Drama Pacha</title>
+<link type="text/css" href="style.css">
+</head>
+<body> 
+<nav>
+<h1>Khss Drama Pacha</h1>
+<div class ='video'>
+<video id="video" height = "533.33px" width ="#" controls>
+<source src="video.mkv">
+</video>
+</div>
+<br>
+<div class = 'button'>
+<a href= "video.mkv">Download</a>
+</div>
+</nav>
+
+</body>
+
+<style>
+*{
+padding:0;
+margin:0;
+background-color:green;
+font-family:sans-serif;
+}
+
+.button{
+padding-top:40px;
+padding-left:750px;
+justify-content:space-between;
+}
+
+.video{
+padding-top:10px;
+padding-left:330;
+}
+a{
+text-decoration: none;
+padding: 5 10;
+background-color:white;
+border-radius:20px;
+}
+
+h1{
+color:#fff;
+font-size:50px;
+padding-left:550px;
+}
+
+nav{
+height:100px;
+justify-content:center;
+align-items:center;
+position:absolute;
+background-colour:dark-green;
+}
+
+.video{
+justify-content:center;
+}
+
+a:hover{
+color:#fff;
+transition:2.5rem;
+background-color:blue;
+}
+</style>
+
+<script>
+var vid =
+document.getElementById("video");
+
+function play(){
+vid.play();
+}
+
+function pause(){
+vid.pause();
+}
+
+function restrt(){
+vid.pause();
+video.currentTime = 0;
+video.load();
+}
+
+function downld(e){
+window .location.href = 'video.mp4';
+}
+}
+
+</script>
+</html>
